@@ -1,0 +1,28 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.deux{
+    margin-left: 40%;
+}
+
+.ranges{
+    font-size: 0px;/*this solves the extra inline margin/padding. src : https://stackoverflow.com/questions/1833734/display-inline-block-extra-margin */
+    display: flow-root; /*This solves disfunc of lines whene somthing typed on div */
+    
+
+}
+.case{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+    width: 60px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(110, 110, 110);
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
