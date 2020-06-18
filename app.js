@@ -39,7 +39,7 @@ statu.innerHTML = `Start game, ${turn == true ? "<span style='color:blue;'>O</sp
 
 mainGame.addEventListener("click",clickCapture);
 
-// in game click handel
+// in game click handle
 function clickCapture(e){
     if(e.target.innerHTML == ""){
         e.target.innerHTML = turn == true ? "<span style='color:blue;'>O</span>" 
@@ -106,7 +106,7 @@ function clickCapture(e){
 
         if(didWin){
 
-            // putting a white space in the empty cases so the click will not make change (e.target.innerHTML != "")
+            // putting a white space in the empty cases so the click will not make changes (e.target.innerHTML != "")
 
             case11.innerHTML = case11.innerHTML == "" ? " " : case11.innerHTML;
             case12.innerHTML = case12.innerHTML == "" ? " " : case12.innerHTML;
@@ -127,7 +127,7 @@ function clickCapture(e){
             statu.innerHTML = `Player ${turn == true ? "<span style='color:blue;'>O</span>" 
             : "<span style='color:red;'>X</span>"} wins !!! `;
             
-            //Change restartButton apparence
+            //Change restartButton appearance
             restartButton.innerHTML = "Play again";
 
         }
@@ -139,7 +139,7 @@ function clickCapture(e){
     }
 }
 
-// handeling restartButton
+// handle restartButton click
 
 restartButton.addEventListener("click", buttonClick);
 
@@ -172,6 +172,6 @@ function buttonClick(){
     statu.innerHTML = `Start game, ${turn == true ? "<span style='color:blue;'>O</span>" 
     : "<span style='color:red;'>X</span>"} starts the game.`;
 
-    //Change restartButton apparence
+    //Change restartButton appearance
     restartButton.innerHTML = "Restart";
 }
